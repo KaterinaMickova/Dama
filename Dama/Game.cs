@@ -14,14 +14,12 @@ namespace Dama
             board.GenerateCheckersPieces();
             board.DrawChessBoard();
             Console.WriteLine();
-
             do
             {
                 Console.WriteLine("Napiš řádek, z kterého přesouváš tvoji figurku:");
                 int row = int.Parse(Console.ReadLine());
                 Console.WriteLine("Napiš sloupec:");
                 int column = int.Parse(Console.ReadLine());
-
                 if (board.SelectCheckersPiece (row, column) != null)
                 {
                     CheckersPieces checker = board.SelectCheckersPiece(row, column);
@@ -41,6 +39,4 @@ namespace Dama
             while (board.CheckForWin() != true);
         }
     }
-}    
-            
-
+}          
