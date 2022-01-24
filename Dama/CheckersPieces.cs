@@ -29,19 +29,16 @@ namespace Dama
             this.Symbol = pieceId;
             this.Position = position;
         }
-
         public string Symbol
         {
             get;
             set;
         }
-
         public int[] Position
         {
             get;
             set;
         }
-
         public string Tag
         {
             get;
@@ -49,4 +46,3 @@ namespace Dama
         }
     }
 }
-
